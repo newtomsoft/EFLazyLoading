@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFLazyLoadingRepository.Migrations
 {
-    [DbContext(typeof(LazyLoadingDbContext))]
+    [DbContext(typeof(PocLazyLoadingDbContext))]
     [Migration("20211107205937_CreationDataBase")]
     partial class CreationDataBase
     {
