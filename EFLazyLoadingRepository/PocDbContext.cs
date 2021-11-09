@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFLazyLoadingRepository;
 
-public class PocLazyLoadingDbContext : DbContext
+public class PocDbContext : DbContext
 {
     public DbSet<Blog> Blogs { get; set; }
     public DbSet<Post> Posts { get; set; }
 
-    public PocLazyLoadingDbContext(DbContextOptions<PocLazyLoadingDbContext> options) : base(options) { }
+    public PocDbContext(DbContextOptions<PocDbContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

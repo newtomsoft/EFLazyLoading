@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFLazyLoadingRepository.Migrations
 {
-    [DbContext(typeof(PocLazyLoadingDbContext))]
+    [DbContext(typeof(PocDbContext))]
     partial class LazyLoadingDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
