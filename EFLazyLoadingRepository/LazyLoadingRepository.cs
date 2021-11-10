@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFLazyLoadingRepository;
 
-public class LazyLoadingRepository : IDbContextRepository
+public class LazyLoadingRepository : IRepository
 {
     private readonly PocDbContext _db;
 
@@ -12,9 +12,11 @@ public class LazyLoadingRepository : IDbContextRepository
 
     public IEnumerable<Blog> GetBlogsRange(int index, int number)
     {
-        var blogsDao = _db.Blogs.Select(b => b).OrderBy(b => b.Id).Skip(index).Take(number).AsEnumerable();
-        return blogsDao.Select(b => b.ToBlog()).ToList();
+        var blogsDao = _db.Blogs.OrderBy(blog => blog.Id).Skip(index).Take(number).AsEnumerable();
+        return blogsDao.Select(blog => blog.ToBlog()).ToList();
     }
+
+    public Blog GetBlogById(int id) => _db.Blogs.First(blog => blog.Id == id).ToBlog();
 
     public void AddRandomBlogs()
     {

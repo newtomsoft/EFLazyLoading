@@ -1,7 +1,7 @@
 ﻿using EFLazyLoadingRepository;
 
-IDbContextRepository lazyLoadingRepository = new LazyLoadingRepository("Data Source=c:\\db.sqlite");
-IDbContextRepository eagerLoadingRepository = new EagerLoadingRepository("Data Source=c:\\db.sqlite");
+IRepository lazyLoadingRepository = new LazyLoadingRepository("Data Source=db.sqlite");
+IRepository eagerLoadingRepository = new EagerLoadingRepository("Data Source=db.sqlite");
 
 var blogsPerRequest = 1000;
 Console.WriteLine($"Displaying first {blogsPerRequest} blogs with lazy loading...");
