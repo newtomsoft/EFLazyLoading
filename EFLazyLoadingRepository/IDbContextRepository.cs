@@ -1,4 +1,4 @@
-﻿using EFLazyLoadingRepository.Dao;
+﻿using EFLazyLoadingDomain;
 
 namespace EFLazyLoadingRepository;
 

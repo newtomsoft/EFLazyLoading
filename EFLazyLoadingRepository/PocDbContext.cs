@@ -5,8 +5,8 @@ namespace EFLazyLoadingRepository;
 
 public class PocDbContext : DbContext
 {
-    public DbSet<Blog> Blogs { get; set; }
-    public DbSet<Post> Posts { get; set; }
+    public DbSet<BlogDao> Blogs { get; set; }
+    public DbSet<PostDao> Posts { get; set; }
 
     public PocDbContext(DbContextOptions<PocDbContext> options) : base(options) { }
 

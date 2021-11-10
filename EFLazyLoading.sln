@@ -5,9 +5,11 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingWpf", "EFLazyLoadingWpf\EFLazyLoadingWpf.csproj", "{6065987E-F5A1-483F-9DAF-76098F4B5E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLazyLoadingConsole", "EFLazyLoadingConsole\EFLazyLoadingConsole.csproj", "{40575569-45C3-480A-8DBE-BE854269BD4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingConsole", "EFLazyLoadingConsole\EFLazyLoadingConsole.csproj", "{40575569-45C3-480A-8DBE-BE854269BD4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLazyLoadingRepository", "EFLazyLoadingRepository\EFLazyLoadingRepository.csproj", "{D8809388-FAAB-4970-B220-5178CE18CE07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingRepository", "EFLazyLoadingRepository\EFLazyLoadingRepository.csproj", "{D8809388-FAAB-4970-B220-5178CE18CE07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLazyLoadingDomain", "EFLazyLoadingDomain\EFLazyLoadingDomain.csproj", "{07D4C445-7256-41C4-936E-E38CDAC58B72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D8809388-FAAB-4970-B220-5178CE18CE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8809388-FAAB-4970-B220-5178CE18CE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8809388-FAAB-4970-B220-5178CE18CE07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D4C445-7256-41C4-936E-E38CDAC58B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D4C445-7256-41C4-936E-E38CDAC58B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D4C445-7256-41C4-936E-E38CDAC58B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D4C445-7256-41C4-936E-E38CDAC58B72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
