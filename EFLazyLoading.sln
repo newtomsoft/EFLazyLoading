@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingConsole", "EFL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingRepository", "EFLazyLoadingRepository\EFLazyLoadingRepository.csproj", "{D8809388-FAAB-4970-B220-5178CE18CE07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLazyLoadingDomain", "EFLazyLoadingDomain\EFLazyLoadingDomain.csproj", "{07D4C445-7256-41C4-936E-E38CDAC58B72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLazyLoadingDomain", "EFLazyLoadingDomain\EFLazyLoadingDomain.csproj", "{07D4C445-7256-41C4-936E-E38CDAC58B72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{0886051E-D618-47D9-AC0B-2493B5692D4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B4067D67-5060-46F6-8DA9-B7C37EA2762D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{59D47D40-615E-4FBC-93A1-D423500A9DC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6065987E-F5A1-483F-9DAF-76098F4B5E53} = {0886051E-D618-47D9-AC0B-2493B5692D4E}
+		{40575569-45C3-480A-8DBE-BE854269BD4B} = {0886051E-D618-47D9-AC0B-2493B5692D4E}
+		{D8809388-FAAB-4970-B220-5178CE18CE07} = {59D47D40-615E-4FBC-93A1-D423500A9DC3}
+		{07D4C445-7256-41C4-936E-E38CDAC58B72} = {B4067D67-5060-46F6-8DA9-B7C37EA2762D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4C44355-FD0A-470A-83FF-7CC5E2CAFABA}

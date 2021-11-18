@@ -9,11 +9,11 @@ public class PostDao
 {
     [Key]
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Content { get; set; }
+    public string? Title { get; set; }
+    public string? Content { get; set; }
     public int BlogId { get; set; }
 
-    public virtual BlogDao Blog { get; set; }
+    public virtual BlogDao? Blog { get; set; }
 
     public Post ToPost()
     {

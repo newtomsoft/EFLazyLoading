@@ -23,7 +23,7 @@ public class LazyLoadingRepository : IRepository
         const int linesToAdd = 100000;
         for (var i = 0; i < linesToAdd; i++)
         {
-            var blog = new BlogDao { Name = $"blogName : {Guid.NewGuid()}" };
+            var blog = new BlogDao(name: $"blogName : {Guid.NewGuid()}");
             _db.Blogs.Add(blog);
         }
         _db.SaveChanges();

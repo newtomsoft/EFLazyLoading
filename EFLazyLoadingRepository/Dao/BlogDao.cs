@@ -11,16 +11,16 @@ public class BlogDao
     public int Id { get; set; }
     public string Name { get; set; }
 
-    public virtual ICollection<PostDao> Posts { get; set; }
+    public virtual ICollection<PostDao>? Posts { get; set; }
 
+
+    public BlogDao(string name)
+    {
+        Name = name;
+    }
 
     public Blog ToBlog()
     {
-        return new Blog
-        {
-            Id = Id,
-            Name = Name,
-            Posts = (from postDao in Posts select postDao.ToPost()).ToList()
-        };
+        return new Blog(id: Id, name: Name, posts: (from postDao in Posts select postDao.ToPost()).ToList());
     }
 }
